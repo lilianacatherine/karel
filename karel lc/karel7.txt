@@ -1,0 +1,12 @@
+class program {
+void turnright(n)
+ {
+ iterate(pred(n))
+ turnleft();
+ }
+    program () {
+        // TODO poner codigo aqui
+        turnright(1);
+        turnoff();
+    }
+}

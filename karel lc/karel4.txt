@@ -1,0 +1,24 @@
+class program {
+    //TODO poner codigo aqui
+    void turnright(){
+    turnleft();
+    turnleft();
+    turnleft();
+    }
+    program () {
+    iterate(3){
+    move();
+    turnright();
+    move();
+    pickbeeper();
+    turnleft();
+   } 
+       turnright();
+       move();
+       turnright();
+       while(frontIsClear){
+       move();
+      }
+        turnoff();
+    }
+}

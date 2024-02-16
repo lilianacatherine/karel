@@ -1,0 +1,58 @@
+class program {
+void turnright()
+ {
+  turnleft();
+  turnleft();
+  turnleft();
+ }
+ void posicionarse()
+ {
+ turnright();
+ move();
+ move();
+ turnleft();
+ }
+ void desplazamiento_vertical
+ {
+   if(frontIsClear)
+   {
+   move();
+   desplazamiento_vertical;
+   if(frontIsBlocked&&nextToABeeper)
+    {
+     pickbeeper();
+     turnleft();
+     turnleft();
+     move();
+   }
+    else
+    move();
+   }
+ }
+  void desplazamiento_horizontal
+ {
+  if(frontIsClear)
+  {
+   move();
+   desplazamiento_horizontal
+   if(facingNorth)
+   {
+    turnright();
+    move();
+    }
+    else 
+     move();
+   }
+  else
+  {
+   turnleft();
+   desplazamiento_vertical;
+  }
+ }
+   
+    program () {
+        posicionarse();
+        desplazamiento_horizontal;
+        turnoff();
+    }
+}

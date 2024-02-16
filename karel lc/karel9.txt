@@ -1,0 +1,24 @@
+class program {
+void turnright()
+ {
+  turnleft();
+  turnleft();
+  turnleft();
+ }
+ void sigueMuroDerecha(){
+  if(rightIsBlocked && frontIsClear){
+  move();
+  }
+  if(rightIsBlocked && frontIsBlocked){
+  turnleft();
+  }
+  if(rightIsBlocked && frontIsBlocked){
+  turnright();
+  move();
+  }
+    program () {
+        while(notNextToABeeper){
+        sigueMuroDerecha();
+        turnoff();
+    }
+}
